@@ -31,3 +31,7 @@ Builds are available in the [releases](https://github.com/denuvosanctuary/coldlo
 ## Disclaimer
 
 This project is for educational and research purposes only. Use responsibly and respect software licenses.
+
+### Credits
+
+- @notgitgit for the help in making this
