@@ -1,0 +1,18 @@
+[package]
+name = "coldloader-proxy"
+version = "1.0.0"
+edition = "2024"
+
+[lib]
+name = "version"
+crate-type = ["cdylib"]
+
+[dependencies]
+winapi = { version = "0.3.9", features = ["libloaderapi", "sysinfoapi", "winnt"] }
+
+[profile.release]
+lto = true
+strip = true
+opt-level = "z"
+codegen-units = 1
+panic = "abort"
